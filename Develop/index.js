@@ -3,59 +3,134 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
-const questions = ['What is the title of your project?', 'Please enter a brief description of this project', 'How do you install this project?', 'How do you use this application?', 'Contribution guidelines', 'Test instructions'];
+const questions = [
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of your project?',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please enter a title for your project')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Please enter a brief description of this project',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please enter a description for your project')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'install',
+        message: 'How do you install this application?',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please instruct the reader on how to install this application')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'How do you use this application?',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please instruct the user on how to use the application')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Please select a license',
+        choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense', 'No License']
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'How can someone contribute to this project?',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please instruct the user on how to contribute to the project')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'How can someone contribute to this project?',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please instruct the user on how to contribute to the project')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'How can someone test this application?',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please instruct the user on how to test the application')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please enter your email address')
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub username?',
+        validate: function (data) {
+            if (data) {
+                return true;
+            } else {
+                console.log('Please enter your GitHub username')
+                return false;
+            }
+        }
+    },
+]
 
 // TODO: Create a function to write README file
 const writeToFile = ({title, description, install, usage}) =>
-    `# ${title}
-
-    ## Description
-    
-    ${description}
-    
-    ## Table of Contents (Optional)
-    
-    If your README is long, add a table of contents to make it easy for users to find what they need.
-    
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [License](#license)
-    
-    ## Installation
-    
-    ${install}
-    
-    ## Usage
-    
-    ${usage}
-
-    ## License
-    
-    The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-    
-    ---
-    
-    🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-    
-    ## Badges
-    
-    ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-    
-    Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-    
-    ## Features
-    
-    If your project has a lot of features, list them here.
-    
-    ## How to Contribute
-    
-    If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-    
-    ## Tests
-    
-    Go the extra mile and write tests for your application. Then provide examples on how to run them here.`;
 
 // TODO: Create a function to initialize app
 function init() {

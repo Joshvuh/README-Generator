@@ -25,9 +25,9 @@ function generateMarkdown(answers) {
 
   ## License
   
-  ![badge](https://img.shields.io/badge/license-${answers.license}-informational)
+  ![badge](https://img.shields.io/badge/License-${answers.license}-informational)
   <br>
-  This application is using ${answers.license} license. 
+  This application is using ${answers.license}. 
   
   ## Contributing
   
