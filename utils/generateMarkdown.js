@@ -25,9 +25,7 @@ function generateMarkdown(answers) {
 
   ## License
   
-  ![badge](https://img.shields.io/badge/License-${answers.license}-informational)
-  <br>
-  This application is using ${answers.license}. 
+  [![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
   
   ## Contributing
   
@@ -41,9 +39,9 @@ function generateMarkdown(answers) {
   
   You can reach me here:
   <br> 
-  mailto:${answers.email} 
+  [Email](mailto:${answers.email}) 
   <br>
-  https://github.com/${answers.github}
+  [GitHub](https://github.com/${answers.github})
 `;
 }
 
