@@ -1,4 +1,4 @@
-# testing
+# testuing
 
   ## Table of Contents
   
@@ -24,7 +24,7 @@
 
   ## License
   
-  [![License](https://img.shields.io/badge/License-MIT-License-blue.svg)](https://opensource.org/licenses/MIT-License)
+  [![License](https://img.shields.io/badge/License-Apache-License_2.0-blue.svg)]
   
   ## Contributing
   
@@ -38,6 +38,6 @@
   
   You can reach me here:
   <br> 
-  [Email](mailto:joshualemmond@gmail.com) 
+  [Email](mailto:testing) 
   <br>
-  [GitHub](https://github.com/joshvuh)
+  [GitHub](https://github.com/testing)

@@ -25,7 +25,7 @@ function generateMarkdown(answers) {
 
   ## License
   
-  [![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
+  [![License](https://img.shields.io/badge/License-${answers.license}-blue.svg)]
   
   ## Contributing
   
