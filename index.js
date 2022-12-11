@@ -77,19 +77,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contributing',
-        message: 'How can someone contribute to this project?',
-        validate: function (data) {
-            if (data) {
-                return true;
-            } else {
-                console.log('Please instruct the user on how to contribute to the project')
-                return false;
-            }
-        }
-    },
-    {
-        type: 'input',
         name: 'tests',
         message: 'How can someone test this application?',
         validate: function (data) {
