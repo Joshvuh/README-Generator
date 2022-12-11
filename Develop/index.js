@@ -130,12 +130,35 @@ const questions = [
 ]
 
 // TODO: Create a function to write README file
-const writeToFile = ({title, description, install, usage}) =>
-
+const writeToFile = data => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./README.md', data, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve(
+                console.log('README created successfully!')
+            );
+        });
+    });
+};
 // TODO: Create a function to initialize app
-function init() {
-
-}
+const init = () => {
+    return inquirer.prompt(questions)
+    .then(inputAnswers => {
+        return inputAnswers;
+    })
+};
 
 // Function call to initialize app
-init();
+init()
+.then(inputAnswers => {
+    return generateMarkdown(inputAnswers);
+})
+.then(generatedREADME => {
+    return writeToFile(generatedREADME);
+})
+.catch(err => {
+    console.log(err)
+})
