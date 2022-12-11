@@ -1,4 +1,4 @@
-# testuing
+# test project
 
   ## Table of Contents
   
@@ -12,32 +12,32 @@
 
   ## Description
   
-  testing
+  test desc.
   
   ## Installation
   
-  testing
+  test install
   
   ## Usage
   
-  testing
+  test app
 
   ## License
   
-  [![License](https://img.shields.io/badge/License-Apache-License_2.0-blue.svg)]
+  [![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/licenses/Apache)
   
   ## Contributing
   
-  testing
+  no
   
   ## Tests
 
-  testing
+  yes
 
   ## Contact
   
   You can reach me here:
   <br> 
-  [Email](mailto:testing) 
+  [Email](mailto:no@gmail.com) 
   <br>
-  [GitHub](https://github.com/testing)
+  [GitHub](https://github.com/joshvuh)
