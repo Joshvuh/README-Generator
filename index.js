@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
+// Array containing our questions we'll ask using inquirer.
 const questions = [
     {
         type: 'input',
@@ -116,12 +116,13 @@ const questions = [
     },
 ]
 
-// TODO: Create a function to write README file
+// Function we're using to write the entered data to README.md
+// If writeFile is successful it will log 'README created successfully!' to the console, otherwise it will log the error to the console.
 const writeToFile = data => {
     return new Promise((resolve, reject) => {
         fs.writeFile('./README.md', data, err => {
             if (err) {
-                reject(err);
+                reject(console.error(err));
                 return;
             }
             resolve(
@@ -130,7 +131,8 @@ const writeToFile = data => {
         });
     });
 };
-// TODO: Create a function to initialize app
+
+// Function that runs when we run node index.js
 const init = () => {
     return inquirer.prompt(questions)
     .then(inputAnswers => {
@@ -139,6 +141,7 @@ const init = () => {
 };
 
 // Function call to initialize app
+// First prompts user with questions, then runs generateMarkdown with the user's answers. After that writes the file using result of generateMarkdown. If there are any errors they will be caught and logged to the console.
 init()
 .then(inputAnswers => {
     return generateMarkdown(inputAnswers);
@@ -147,5 +150,5 @@ init()
     return writeToFile(generatedREADME);
 })
 .catch(err => {
-    console.log(err)
+    console.error(err)
 })

@@ -37,10 +37,8 @@ function generateMarkdown(answers) {
 
   ## Contact
   
-  You can reach me here:
-  <br> 
+  If you have questions regarding this application, you can reach me here:
   [Email](mailto:${answers.email}) 
-  <br>
   [GitHub](https://github.com/${answers.github})
 `;
 }

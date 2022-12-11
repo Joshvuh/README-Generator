@@ -1,4 +1,4 @@
-# READEME Generator
+# Test
 
   ## Table of Contents
   
@@ -12,32 +12,30 @@
 
   ## Description
   
-  Use this app to generate a professional readme
+  TEsting
   
   ## Installation
   
-  download the files from this repo (Please make sure you also have node js installed)
+  Tester
   
   ## Usage
   
-  open index.js in vscode > open the integrated terminal > run node index.js > answer prompts
+  Tested
 
   ## License
   
-  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/licenses/Apache)
   
   ## Contributing
   
-  pull requests
+  N/A
   
   ## Tests
 
-  same way as using it
+  N/A
 
   ## Contact
   
-  You can reach me here:
-  <br> 
-  [Email](mailto:joshualemmond@gmail.com) 
-  <br>
-  [GitHub](https://github.com/joshvuh)
+  If you have questions regarding this application, you can reach me here:
+  [Email](mailto:N/) 
+  [GitHub](https://github.com/a)
