@@ -24,7 +24,7 @@
 
   ## License
   
-  ![badge]https://img.shields.io/badge/License-MIT%20License-informational
+  ![License]https://img.shields.io/badge/License-MIT%20License-informational
   <br>
   This application is using MIT License. 
   
