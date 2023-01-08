@@ -1,4 +1,4 @@
-# README Generator
+# Team-Profile-Generator
 
   ## Table of Contents
   
@@ -12,32 +12,32 @@
 
   ## Description
   
-  Use this application to generate a professional README by answering a few prompts.
+  This application was built using Nodejs. Use it to generate an HTML page containing information about your Team.
   
   ## Installation
   
-  Download the files from this repo. (Please also make sure you have Nodejs installed)
+  Download the files from the repo, run npm i to load the dependencies, then run node index.js and answer the prompts.
   
   ## Usage
   
-  Open index.js in VS Code's integrated terminal, then run npm i to install the dependencies. After that run node index.js, and answer the prompts.
+  Run node index.js from your terminal, and answer the prompts.
 
   ## License
   
-  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-No-License-blue.svg)](https://opensource.org/licenses/No-License)
   
   ## Contributing
   
-  Create a pull request.
+  Create a pull request
   
   ## Tests
 
-  N/A
+  Use the test files that are part of the repo.
 
   ## Contact
   
   If you have questions regarding this application, please contact me:
   <br>
-  [Email](mailto:joshualemmond@gmail.com) 
+  [Email](mailto:Joshualemmond@gmail.com) 
   <br>
   [GitHub](https://github.com/Joshvuh)
