@@ -1,4 +1,4 @@
-# Team-Profile-Generator
+# README-Generator
 
   ## Table of Contents
   
@@ -12,7 +12,7 @@
 
   ## Description
   
-  This application was built using Nodejs. Use it to generate an HTML page containing information about your Team.
+  Generate README files by answer prompts in the console! Create simple and understandable READMEs quickly and easily.
   
   ## Installation
   
